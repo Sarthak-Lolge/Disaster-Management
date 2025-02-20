@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="\hackton\src\css\style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxXQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,9 +12,10 @@
   <body>
     <header>
       <section class="navbar">
-        <img src="/assests/images/Logo.png" alt="logo" />
+        <!-- <img src="./images/Logo.png" alt="logo" /> -->
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
           <div class="dropdown">
             <ul class="dropdown-btn">
               Way To Give
@@ -41,18 +42,44 @@
 
           <li><a href="#">About</a></li>
           <li><a href="#">Contact Us</a></li>
+          
         </ul>
         <button class="donate">Donate</button>
       </section>
     </header>
 
+    <!-- hersection  -->
     <div class="hero-section">
-      <div class="banner-imgs">
-        
-        <div class="b1">
-          <h1>A man stands on the rubble of collapsed buildings in Hatay, Turkey on February 10, 2023, after a magnitude 7.8 earthquake struck the country's southeast.</h1>
-          <button class="donate">Read more</button>
+      <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+              <div class="image1">
+                <div class="img-info">
+                  <h1>The North American wildfire season typically runs from spring to fall, although it varies by region as is evidenced by the January wildfires in California.</h1>
+                  <button class="readmore-btn">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="image2">
+                <div class="img-info">
+                  <h1>Cyclone Chido was a Category 4 storm that devastated the island of Mayotte and severely damaged parts of the islands of Comoros, northern Mozambique and southern Malawi.</h1>
+                  <button class="readmore-btn">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="image3">
+                <div class="img-info">
+                  <h1>In late November 2024, 27 people died across Thailand and Malaysia in the worst flooding the region has experienced in years.</h1>
+                  <button class="readmore-btn">Read More</button>
+                </div>
+              </div>
+            </div>
         </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
       </div>
 
       <!-- Disasters -->
@@ -212,6 +239,6 @@
       <div class="copywrite">
         <p>©2025 made by status 200</p>
       </div>
-      <script src="script.js"></script>
+      <script src="D:\hackton\src\JS\script.js"></script>
   </body>
 </html>
